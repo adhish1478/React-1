@@ -6,16 +6,19 @@ import MovieCard from './components/MovieCard'
 import Home from  './pages/home'
 import { Route, Routes } from 'react-router-dom'
 import Favorite from './pages/favorite'
-
+import NavBar from './components/navbar'
 
 function App() {
   return (
+    <div>
+      <NavBar />
     <main className='main-content'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/favorite' element= {<Favorite />} />
       </Routes>
     </main>
+    </div>
   );
 }
 
