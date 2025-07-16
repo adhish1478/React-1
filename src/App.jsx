@@ -4,12 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import MovieCard from './components/MovieCard'
 import Home from  './pages/home'
+import { Route, Routes } from 'react-router-dom'
+import Favorite from './pages/favorite'
+
 
 function App() {
   return (
-    <>
-    <Home />
-    </>
+    <main className='main-content'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/favorite' element= {<Favorite />} />
+      </Routes>
+    </main>
   );
 }
 
