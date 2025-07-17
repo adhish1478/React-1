@@ -5,20 +5,21 @@ import './css/App.css'
 import MovieCard from './components/MovieCard'
 import Home from  './pages/home'
 import { Route, Routes } from 'react-router-dom'
-import Favorite from './pages/favorite'
+import Favorites from './pages/Favorites'
 import NavBar from './components/navbar'
+import { MovieProvider } from './contexts/MovieContext'
 
 function App() {
   return (
-    <div>
+    <MovieProvider>
       <NavBar />
     <main className='main-content'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/favorite' element= {<Favorite />} />
+        <Route path='/favorites' element= {<Favorites />} />
       </Routes>
     </main>
-    </div>
+    </MovieProvider>
   );
 }
 
