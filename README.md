@@ -1,12 +1,21 @@
-# React + Vite
+🎬 TMDB Movie Favorites App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project that displays popular movies using The Movie Database (TMDB) API. Users can view movie details and mark their favorites — all stored locally in the browser.
 
-Currently, two official plugins are available:
+🔗 Live: movielistfavs.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
+	•	Fetches popular movies from TMDB
+	•	Add/remove movies to your favorites
+	•	Favorites are saved using localStorage
+	•	React Router for page navigation
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+	•	React
+	•	React Router
+	•	TMDB API
+	•	CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚧 Note
+
+This was built as part of a YouTube tutorial. I followed along and learned basic React, routing, and working with APIs. Not production-grade, but a helpful beginner project.
